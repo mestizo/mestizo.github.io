@@ -184,7 +184,7 @@
 <span class='line-number'>35</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>input <span class="o">{</span>
 </span><span class='line'>  file <span class="o">{</span>
-</span><span class='line'>    <span class="nv">path</span> <span class="o">=</span>&gt; <span class="o">[</span><span class="s2">&quot;/agoda/logs/suricata/eve.json&quot;</span><span class="o">]</span>
+</span><span class='line'>    <span class="nv">path</span> <span class="o">=</span>&gt; <span class="o">[</span><span class="s2">&quot;/var/logs/suricata/eve.json&quot;</span><span class="o">]</span>
 </span><span class='line'>    <span class="nv">codec</span> <span class="o">=</span>&gt;   json
 </span><span class='line'>    <span class="nb">type</span> <span class="o">=</span>&gt; <span class="s2">&quot;SuricataIDPS-logs&quot;</span>
 </span><span class='line'>  <span class="o">}</span>
@@ -276,7 +276,7 @@
 <p>Configure crontab to purge data (<a href="https://github.com/elasticsearch/curator/blob/master/README.md">more options detailed on the Curator page</a>):</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>16 02 * * * /usr/bin/curator -c 7 -d 14  2&gt;&amp;1 | mailx -r noreply@agoda.com -s <span class="s2">&quot;ElasticSearch Curator Purge&quot;</span> secalerts@agoda.com
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>16 02 * * * /usr/bin/curator -c 7 -d 14  2&gt;&amp;1 | mailx -r noreply@yourdomain.com -s <span class="s2">&quot;ElasticSearch Curator Purge&quot;</span> alerts@yourdomain.com
 </span></code></pre></td></tr></table></div></figure>
 
 
