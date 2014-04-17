@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Monkey House Security</title>
+  <title>Suricata 2.0 + Logstash + ElasticSearch + Kibana on Centos 6 - Monkey House Security</title>
   <meta name="author" content="WetFdStamp">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mestizo.github.io">
+  <link rel="canonical" href="http://mestizo.github.io/blog/2014/04/17/suricata-2-dot-0-plus-logstash-plus-elasticsearch-plus-kibana-on-centos-6">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Monkey House Security" type="application/atom+xml">
@@ -63,15 +63,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/04/17/suricata-2-dot-0-plus-logstash-plus-elasticsearch-plus-kibana-on-centos-6/">Suricata 2.0 + Logstash + ElasticSearch + Kibana on Centos 6</a></h1>
+      <h1 class="entry-title">Suricata 2.0 + Logstash + ElasticSearch + Kibana on Centos 6</h1>
     
     
       <p class="meta">
@@ -94,7 +91,7 @@
   </header>
 
 
-  <div class="entry-content"><p>With the recent release of Suricata 2.0, comes the abilty for JSON formatted output.  Unfortunately the <a href="https://redmine.openinfosecfoundation.org/projects/suricata/wiki/_Logstash_Kibana_and_Suricata_JSON_output">install instructions</a> leave a lot to be desired and only focus on Debian.</p>
+<div class="entry-content"><p>With the recent release of Suricata 2.0, comes the abilty for JSON formatted output.  Unfortunately the <a href="https://redmine.openinfosecfoundation.org/projects/suricata/wiki/_Logstash_Kibana_and_Suricata_JSON_output">install instructions</a> leave a lot to be desired and only focus on Debian.</p>
 
 <p>Install Pre-requisites for Suricata and ElasticSearch:</p>
 
@@ -282,18 +279,51 @@
 
 <p>Additioanlly, don&rsquo;t forget to configure scripts in logrotate.d/ to rotate all of your log files!   Additionally, ensure you set proper permissions on the eve.json file so that the logstash process can read it!</p>
 </div>
+
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">WetFdStamp</span></span>
+
+      
+
+
+
+
+
+
+
+
   
 
 
-    </article>
+<time datetime="2014-04-17T17:34:56+07:00" pubdate data-updated="true">Apr 17<span>th</span>, 2014</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
   
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://mestizo.github.io/blog/2014/04/17/suricata-2-dot-0-plus-logstash-plus-elasticsearch-plus-kibana-on-centos-6/" data-via="wetfdstamp" data-counturl="http://mestizo.github.io/blog/2014/04/17/suricata-2-dot-0-plus-logstash-plus-elasticsearch-plus-kibana-on-centos-6/" >Tweet</a>
+  
+  
+  
 </div>
+
+    
+    <p class="meta">
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -315,7 +345,7 @@ Security dude based in Bangkok, Thailand</p>
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/mestizo">@mestizo</a> on GitHub
@@ -357,6 +387,7 @@ Security dude based in Bangkok, Thailand</p>
 
   
 </aside>
+
 
     </div>
   </div>
