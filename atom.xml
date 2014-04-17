@@ -4,7 +4,7 @@
   <title><![CDATA[Monkey House Security]]></title>
   <link href="http://mestizo.github.io/atom.xml" rel="self"/>
   <link href="http://mestizo.github.io/"/>
-  <updated>2014-02-11T17:04:13+07:00</updated>
+  <updated>2014-04-17T19:11:21+07:00</updated>
   <id>http://mestizo.github.io/</id>
   <author>
     <name><![CDATA[WetFdStamp]]></name>
@@ -12,31 +12,5 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Test Post]]></title>
-    <link href="http://mestizo.github.io/blog/2014/02/11/test-post/"/>
-    <updated>2014-02-11T16:10:35+07:00</updated>
-    <id>http://mestizo.github.io/blog/2014/02/11/test-post</id>
-    <content type="html"><![CDATA[<h1>A First Level Header</h1>
-
-<h2>A Second Level Header</h2>
-
-<p>Now is the time for all good men to come to
-the aid of their country. This is just a
-regular paragraph.</p>
-
-<p>The quick brown fox jumped over the lazy
-dog&rsquo;s back.</p>
-
-<h3>Header 3</h3>
-
-<blockquote><p>This is a blockquote.</p>
-
-<p>This is the second paragraph in the blockquote.</p>
-
-<h2>This is an H2 in a blockquote</h2></blockquote>
-]]></content>
-  </entry>
   
 </feed>
