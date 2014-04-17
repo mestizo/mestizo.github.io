@@ -139,6 +139,55 @@ With the recent release of Suricata 2.0, comes the abilty for JSON formatted out
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Configure Suricata to generate JSON Output by adding the following to the &ldquo;outputs&rdquo; section of the suricata.yaml file:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'> <span class="c"># &quot;United&quot; event log in JSON format</span>
+</span><span class='line'>  - eve-log:
+</span><span class='line'>      enabled: yes
+</span><span class='line'>      <span class="nb">type</span>: file <span class="c">#file|syslog|unix_dgram|unix_stream</span>
+</span><span class='line'>      filename: eve.json
+</span><span class='line'>      <span class="c"># the following are valid when type: syslog above</span>
+</span><span class='line'>      <span class="c">#identity: &quot;suricata&quot; </span>
+</span><span class='line'>      <span class="c">#facility: local5</span>
+</span><span class='line'>      <span class="c">#level: Info ## possible levels: Emergency, Alert, Critical,</span>
+</span><span class='line'>                   <span class="c">## Error, Warning, Notice, Info, Debug</span>
+</span><span class='line'>      types:
+</span><span class='line'>        - alert
+</span><span class='line'>        - http:
+</span><span class='line'>            extended: yes     <span class="c"># enable this for extended logging information</span>
+</span><span class='line'>        - dns
+</span><span class='line'>        - tls:
+</span><span class='line'>            extended: yes     <span class="c"># enable this for extended logging information</span>
+</span><span class='line'>        - files:
+</span><span class='line'>            force-magic: yes   <span class="c"># force logging magic on all logged files</span>
+</span><span class='line'>            force-md5: yes     <span class="c"># force logging of md5 checksums</span>
+</span><span class='line'>        <span class="c">#- drop</span>
+</span><span class='line'>        - ssh
+</span></code></pre></td></tr></table></div></figure>
+
+
 <p>Install Logstash:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
