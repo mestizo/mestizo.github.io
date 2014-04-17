@@ -4,7 +4,7 @@
   <title><![CDATA[Monkey House Security]]></title>
   <link href="http://mestizo.github.io/atom.xml" rel="self"/>
   <link href="http://mestizo.github.io/"/>
-  <updated>2014-04-17T19:14:45+07:00</updated>
+  <updated>2014-04-17T19:31:17+07:00</updated>
   <id>http://mestizo.github.io/</id>
   <author>
     <name><![CDATA[WetFdStamp]]></name>
@@ -18,7 +18,8 @@
     <link href="http://mestizo.github.io/blog/2014/04/17/suricata-2-dot-0-plus-logstash-plus-elasticsearch-plus-kibana-on-centos-6/"/>
     <updated>2014-04-17T17:34:56+07:00</updated>
     <id>http://mestizo.github.io/blog/2014/04/17/suricata-2-dot-0-plus-logstash-plus-elasticsearch-plus-kibana-on-centos-6</id>
-    <content type="html"><![CDATA[<p>With the recent release of Suricata 2.0, comes the abilty for JSON formatted output.  Unfortunately the <a href="https://redmine.openinfosecfoundation.org/projects/suricata/wiki/_Logstash_Kibana_and_Suricata_JSON_output">install instructions</a> leave a lot to be desired and only focus on Debian.</p>
+    <content type="html"><![CDATA[<p><img class="left" src="images/suricata.png" width="320" height="250" title="Suricata" >
+With the recent release of Suricata 2.0, comes the abilty for JSON formatted output.  This provides the abilty to parse your IDS logs with Logstash, store them in ElasticSearch, and use Kibana as a front end dashboard.   Unfortunately the <a href="https://redmine.openinfosecfoundation.org/projects/suricata/wiki/_Logstash_Kibana_and_Suricata_JSON_output">install instructions</a> leave a lot to be desired and only focus on Debian.  So, I have documented the steps required to get this working on CentOS 6.5.</p>
 
 <p>Install Pre-requisites for Suricata and ElasticSearch:</p>
 
