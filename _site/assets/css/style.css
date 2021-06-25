@@ -252,3 +252,6 @@ a {
 
 #a-title {
   text-decoration: none; }
+
+.btn {
+  display: none !important; }
