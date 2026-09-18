@@ -1,381 +1,1309 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Patrick Harrison</title>
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet">
-        <!-- Fonts CSS-->
-        <link rel="stylesheet" href="css/heading.css">
-        <link rel="stylesheet" href="css/body.css">
-    </head>
-    <body id="page-top">
-        <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
-            <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Mestizo</a>
-                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">ABOUT</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/Image_20210623_174006.png" alt="">
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading mb-0">Patrick Harrison</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="pre-wrap masthead-subheading font-weight-light mb-0">CISO - PenTester - SecDevOps Engineer </p>
-            </div>
-        </header>
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <div class="text-center">
-                    <h2 class="page-section-heading text-secondary mb-0 d-inline-block">Portfolio</h2>
-                </div>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Items-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/GitHub-logo.png" alt="GitHub"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/blog.png" alt="Blog"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/top-secret.png" alt="Startup"/>
-                        </div>
-                    </div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patrick Harrison — Security Engineering, Thailand</title>
+<meta name="description" content="Security architecture, incident response, and advisory based in Chiang Mai, Thailand. Three decades of experience building and protecting systems.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+/* ───────────────────────────────────────────── Tokens
+   ───────────────────────────────────────────── */
+:root {
+  /* Warm light palette */
+  --bg-body:     #FAFBFC;
+  --bg-surface:  #FFFFFF;
+  --bg-elevated: #F5F7FA;
+  --bg-gradient-start: #F8FAFC;
+  --bg-gradient-end: #EEF2F6;
 
+  /* Text - warm grays */
+  --text-primary:   #1A202C;
+  --text-secondary: #4A5568;
+  --text-muted:     #718096;
 
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio Modal-->
-        <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">GitHub</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/github.png" alt="GitHub"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Various collection of scripts and code snippets.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  /* Accents - professional blue palette */
+  --accent-blue:    #2563EB;
+  --accent-blue-light: #3B82F6;
+  --accent-blue-dark: #1D4ED8;
+  --accent-amber:   #D97706;
+  --accent-rose:    #DC2626;
+  --accent-indigo:  #4F46E5;
+
+  /* Semantic */
+  --border-subtle: rgba(160, 174, 192, 0.3);
+  --border-strong: rgba(160, 174, 192, 0.5);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+  --shadow-xl: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+
+  /* Typography */
+  --font-display: "Space Grotesk", system-ui, -apple-system, sans-serif;
+  --font-body:    "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  /* Type scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.5rem;
+  --text-4xl: 3.5rem;
+
+  /* Radius */
+  --radius: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ───────────────────────────────────────────── Global
+   ───────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--bg-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent-blue);
+  color: white;
+}
+
+/* ───────────────────────────────────────────── Typography
+   ───────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+h1 { font-size: clamp(var(--text-3xl), 6vw, var(--text-4xl)); }
+h2 { font-size: clamp(var(--text-xl), 4vw, var(--text-2xl)); }
+h3 { font-size: var(--text-lg); }
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-blue);
+}
+
+/* ───────────────────────────────────────────── Layout
+   ───────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--space-lg);
+}
+
+.section {
+  padding-block: var(--space-3xl);
+}
+
+.section:first-of-type {
+  padding-top: var(--space-2xl);
+}
+
+/* ───────────────────────────────────────────── Header
+   ───────────────────────────────────────────── */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  background: rgba(250, 251, 252, 0.9);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-md);
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.logo-mark {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-light) 100%);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: var(--text-base);
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-xl);
+}
+
+.nav a {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  position: relative;
+  padding: var(--space-xs) 0;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-blue);
+  transition: width 0.25s ease;
+}
+
+.nav a:hover {
+  color: var(--text-primary);
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* ───────────────────────────────────────────── Hero
+   ───────────────────────────────────────────── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 50%, #E6FFFA 100%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(79, 70, 229, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(37, 99, 235, 0.1) 1px, transparent 0);
+  background-size: 40px 40px;
+  opacity: 0.5;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--space-2xl);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-lg);
+  background: white;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: 50px;
+  box-shadow: var(--shadow-sm);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--accent-blue);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.1); }
+}
+
+.hero h1 {
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  max-width: 15ch;
+}
+
+@media (max-width: 900px) {
+  .hero h1 {
+    max-width: none;
+  }
+}
+
+.hero h1 .accent {
+  color: var(--accent-blue);
+}
+
+.hero-lead {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  max-width: 40ch;
+  margin-bottom: var(--space-xl);
+}
+
+@media (max-width: 900px) {
+  .hero-lead {
+    max-width: none;
+  }
+}
+
+.hero-meta {
+  display: flex;
+  gap: var(--space-xl);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .hero-meta {
+    justify-content: center;
+  }
+}
+
+.hero-meta span {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+/* Avatar Card */
+.hero-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-card {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background: white;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  padding: var(--space-lg);
+  transition: transform 0.3s ease;
+}
+
+.avatar-card:hover {
+  transform: translateY(-5px);
+}
+
+.avatar-frame {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-body) 100%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-badge {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-light) 100%);
+  color: white;
+  padding: var(--space-xs) var(--space-lg);
+  border-radius: 50px;
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: var(--shadow-md);
+}
+
+/* ───────────────────────────────────────────── Section patterns
+   ───────────────────────────────────────────── */
+.section-header {
+  margin-bottom: var(--space-2xl);
+  text-align: center;
+}
+
+.section-header h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.section-header p {
+  color: var(--text-secondary);
+  max-width: 50ch;
+  margin-inline: auto;
+}
+
+/* ───────────────────────────────────────────── Portfolio
+   ───────────────────────────────────────────── */
+.portfolio {
+  background: white;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-lg);
+}
+
+.portfolio-item {
+  position: relative;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.portfolio-image {
+  position: relative;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background: var(--bg-elevated);
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-image img {
+  transform: scale(1.05);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(79, 70, 229, 0.85) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay-icon {
+  color: white;
+  font-size: var(--text-3xl);
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay-icon {
+  transform: scale(1);
+}
+
+.portfolio-content {
+  padding: var(--space-lg);
+}
+
+.portfolio-title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.portfolio-desc {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+/* ───────────────────────────────────────────── About
+   ───────────────────────────────────────────── */
+.about {
+  background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-body) 100%);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+}
+
+.about-content h2 {
+  margin-bottom: var(--space-lg);
+}
+
+.about-text {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.about-text p {
+  margin-bottom: var(--space-md);
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.stat-item {
+  text-align: center;
+  padding: var(--space-lg);
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--accent-blue);
+  display: block;
+}
+
+.stat-label {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.about-visual {
+  position: relative;
+}
+
+.skill-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+}
+
+.skill-tag {
+  font-size: var(--text-sm);
+  padding: var(--space-xs) var(--space-md);
+  background: white;
+  border: 1px solid var(--border-subtle);
+  border-radius: 50px;
+  color: var(--text-secondary);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+  transform: translateY(-2px);
+}
+
+.skill-tag.highlight {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-light) 100%);
+  color: white;
+  border-color: transparent;
+}
+
+/* ───────────────────────────────────────────── Contact
+   ───────────────────────────────────────────── */
+.contact {
+  background: white;
+  position: relative;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+}
+
+.contact-info h2 {
+  margin-bottom: var(--space-md);
+}
+
+.contact-info > p {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xl);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.contact-link:hover {
+  border-color: var(--accent-blue);
+  box-shadow: var(--shadow-md);
+  transform: translateX(4px);
+}
+
+.contact-link-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-light) 100%);
+  border-radius: var(--radius);
+  color: white;
+  font-size: var(--text-lg);
+  flex-shrink: 0;
+}
+
+.contact-link-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-link-label {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contact-link-value {
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
+.social-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.social-link {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+  font-size: var(--text-lg);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.social-link:hover {
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* CV Card */
+.cv-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.cv-card h3 {
+  margin-bottom: var(--space-lg);
+  color: var(--text-primary);
+}
+
+.cv-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: var(--space-lg);
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.cv-item:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 600px) {
+  .cv-item {
+    grid-template-columns: 1fr;
+    gap: var(--space-xs);
+  }
+}
+
+.cv-date {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.cv-content h4 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25em;
+}
+
+.cv-content .org {
+  font-size: var(--text-sm);
+  color: var(--accent-blue);
+  margin-bottom: var(--space-xs);
+}
+
+.cv-content p {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+/* ───────────────────────────────────────────── Footer
+   ───────────────────────────────────────────── */
+.footer {
+  background: var(--text-primary);
+  color: white;
+  padding-block: var(--space-xl);
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+}
+
+.footer-mark {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-light) 100%);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: var(--text-sm);
+}
+
+.footer p {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--space-lg);
+  margin-top: var(--space-sm);
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+/* ───────────────────────────────────────────── Utilities
+   ───────────────────────────────────────────── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+/* ───────────────────────────────────────────── Modals
+   ───────────────────────────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal {
+  background: white;
+  border-radius: var(--radius-xl);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modalIn 0.3s ease;
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-elevated);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: var(--text-lg);
+  transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+  background: var(--accent-rose);
+  color: white;
+}
+
+.modal-content {
+  padding: var(--space-2xl);
+  text-align: center;
+}
+
+.modal-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.modal-title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+
+.modal-text {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xl);
+}
+
+.modal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-xl);
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-light) 100%);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark"><i class="fas fa-shield-alt"></i></span>
+      <span>mestizo</span>
+    </a>
+    <nav class="nav">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="status-dot"></span>
+            <span class="eyebrow">Available for consulting</span>
+          </div>
+          <h1>CISO <span class="accent">&</span> Security Engineer</h1>
+          <p class="hero-lead">
+            Nearly three decades building and breaking systems. Based in Chiang Mai,
+            working with teams globally to design security that actually fits
+            how people work.
+          </p>
+          <div class="hero-meta">
+            <span><i class="fas fa-map-marker-alt"></i> Chiang Mai, Thailand</span>
+            <span><i class="fas fa-globe"></i> UTC+7</span>
+            <span><i class="fas fa-briefcase"></i> 28+ Years Experience</span>
+          </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal1Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Security Blog</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/blog2.png" alt="Blog"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Long running cybersecurity focused blog.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="hero-avatar">
+          <div class="avatar-card">
+            <div class="avatar-frame">
+              <img src="assets/img/Image_20210623_174006.png" alt="Patrick Harrison">
             </div>
+            <span class="avatar-badge">★ CISO & PenTester</span>
+          </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal2Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">CyberSecurity Startup</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/top-secret.png" alt="Log Cabin"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">A CyberSecurity startup based in Thailand.  Currently in stealth mode!</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Portfolio</h2>
+        <p>Projects, platforms, and contributions across the security landscape.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-item" onclick="openModal('github')">
+          <div class="portfolio-image">
+            <img src="assets/img/portfolio/GitHub-logo.png" alt="GitHub">
+            <div class="portfolio-overlay">
+              <i class="fas fa-plus portfolio-overlay-icon"></i>
             </div>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">GitHub</h3>
+            <p class="portfolio-desc">Various collection of scripts and code snippets.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item" onclick="openModal('blog')">
+          <div class="portfolio-image">
+            <img src="assets/img/portfolio/blog.png" alt="Security Blog">
+            <div class="portfolio-overlay">
+              <i class="fas fa-plus portfolio-overlay-icon"></i>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Security Blog</h3>
+            <p class="portfolio-desc">Long running cybersecurity focused blog.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item" onclick="openModal('startup')">
+          <div class="portfolio-image">
+            <img src="assets/img/portfolio/top-secret.png" alt="CyberSecurity Startup">
+            <div class="portfolio-overlay">
+              <i class="fas fa-plus portfolio-overlay-icon"></i>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">CyberSecurity Startup</h3>
+            <p class="portfolio-desc">A CyberSecurity startup based in Thailand. Currently in stealth mode!</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <p class="eyebrow">About Me</p>
+          <h2>Security Specialist & Consultant</h2>
+          <div class="about-text">
+            <p>Patrick has nearly thirty years of information security experience in various roles and has received many security certifications. Patrick specializes in risk management, web application security, infrastructure vulnerability assessment, penetration testing, firewall management, PCI Compliance, and Incident Response.</p>
+            <p>Patrick also has an extensive IT Support, DevOps, and Linux administration background, which uniquely positions him to truly understand the security implications of vulnerabilities, the impact to the organizations, and the proper way to remediate them.</p>
+            <p>In addition to working on a global scale with several multi-nations in various locations, Patrick has been working in Thailand for nineteen (19) years.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">28+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">19</span>
+              <span class="stat-label">Years in Thailand</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">Global</span>
+              <span class="stat-label">Client Base</span>
+            </div>
+          </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal3Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Tasty Cake</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="Tasty Cake"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="about-visual">
+          <div class="skill-cloud">
+            <span class="skill-tag">Risk Management</span>
+            <span class="skill-tag highlight">Web App Security</span>
+            <span class="skill-tag highlight">Penetration Testing</span>
+            <span class="skill-tag highlight">Incident Response</span>
+            <span class="skill-tag highlight">DevOps</span>
+            <span class="skill-tag">PCI Compliance</span>
+            <span class="skill-tag highlight">Linux Administration</span>
+            <span class="skill-tag highlight">Vulnerability Assessment</span>
+            <span class="skill-tag">Firewall Management</span>
+            <span class="skill-tag">Cloud Security</span>
+            <span class="skill-tag highlight">Security Architecture</span>
+            <span class="skill-tag">Threat Hunting</span>
+          </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal4Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Circus Tent</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="Circus Tent"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow">Get in Touch</p>
+          <h2>Let's Work Together</h2>
+          <p>Available for short-term consulting, security assessments, architecture reviews, and incident response. Based in Chiang Mai with regular travel across APAC.</p>
+
+          <div class="contact-links">
+            <a href="mailto:hello@mestizo.asia" class="contact-link">
+              <span class="contact-link-icon"><i class="fas fa-envelope"></i></span>
+              <span class="contact-link-text">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">security@mestizo.asia</span>
+              </span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/mestizo" class="contact-link" target="_blank" rel="noopener">
+              <span class="contact-link-icon"><i class="fab fa-linkedin-in"></i></span>
+              <span class="contact-link-text">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">/in/mestizo</span>
+              </span>
+            </a>
+
+            <a href="#" class="contact-link" onclick="alert('Signal available on request'); return false;">
+              <span class="contact-link-icon"><i class="fas fa-lock"></i></span>
+              <span class="contact-link-text">
+                <span class="contact-link-label">Signal</span>
+                <span class="contact-link-value">Available on request</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="social-grid">
+            <a href="https://www.github.com/mestizo" class="social-link" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.twitter.com/WetFdStamp" class="social-link" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://infosec.exchange/@mestizo" class="social-link" target="_blank" rel="noopener" title="Mastodon"><i class="fab fa-mastodon"></i></a>
+            <a href="https://medium.com/@mestizo" class="social-link" target="_blank" rel="noopener" title="Medium"><i class="fab fa-medium"></i></a>
+            <a href="https://blog.securehub.asia" class="social-link" target="_blank" rel="noopener" title="Blog"><i class="fab fa-blogger"></i></a>
+            <a href="https://www.instagram.com/mestizo/" class="social-link" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/c/PatrickHarrison0" class="social-link" target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/mestizo/" class="social-link" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>         
+            <a href="https://www.linkedin.com/in/mestizo" class="social-link" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a  href="https://www.crunchbase.com/person/patrick-harrison" class="social-link" target="_blank" rel="noopener" title="Crunchbase"><i class="fas fa-fw fa-id-badge"></i></a>
+            <a href="https://open.spotify.com/user/1229394780" class="social-link" target="_blank" rel="noopener" title="Spotify"><i class="fab fa-spotify"></i></a>
+            <a href="https://post.news/mestizo" class="social-link" target="_blank" rel="noopener" title="Post.News"><i class="fas fa-fw fa-newspaper"></i></a>
+          </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal5Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Controller</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="Controller"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+        <div class="cv-card">
+          <h3><i class="fas fa-file-alt" style="color: var(--accent-blue); margin-right: var(--space-xs);"></i> Experience Highlights</h3>
+
+          <div class="cv-item">
+            <time class="cv-date">2019 — Present</time>
+            <div class="cv-content">
+              <h4>Principal Security Consultant</h4>
+              <p class="org">Independent / Mestizo Asia</p>
+              <p>Security architecture, incident response, and advisory for organizations across APAC.</p>
             </div>
+          </div>
+
+          <div class="cv-item">
+            <time class="cv-date">2021 — Present</time>
+            <div class="cv-content">
+              <h4>Head of VAPT</h4>
+              <p class="org">Regional Technology Firm</p>
+              <p>Own vulnerability management and penetration testing for Thailand's second largest company.</p>
+            </div>
+          </div>
+
+          <div class="cv-item">
+            <time class="cv-date">2012 — 2022</time>
+            <div class="cv-content">
+              <h4>CISO / Data Security Manager</h4>
+              <p class="org">Regional Technology Firm</p>
+              <p>Served as the de facto company CISO to design and implement a complete enterprise security program.</p>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 1px solid var(--border-subtle);">
+            <a href="assets/files/PatrickHarrisonCVBrief-2026.pdf" class="modal-btn">
+              <i class="fas fa-download"></i> Download Full CV
+            </a>
+          </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal6Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Submarine</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="Submarine"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <div class="text-center">
-                    <h2 class="page-section-heading d-inline-block text-white">ABOUT</h2>
-                </div>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ml-auto">
-                        <p class="pre-wrap lead">Patrick has over twenty years of information security experience in various roles and has received many security certifications. Patrick specializes in risk management, web application security, infrastructure vulnerability assessment, penetration testing, firewall management, PCI Compliance, and Incident Response. </p>
-                    </div>
-                    <div class="col-lg-4 ml-auto">
-                        <p class="pre-wrap lead">Patrick also has an extensive IT Support, DevOps, and Linux administration background, which uniquely positions him to truly understand the security implications of vulnerabilities, the impact to the organizations, and the proper way to remediate them. </p>
-                    </div>
-                    <div class="col-lg-4 mr-auto">
-                        <p class="pre-wrap lead">In addition to working on a global scale with several multi-nations in various locations, Patrick has been working in Thailand for more than fourteen(14) years. This not only allows him to "think globally", but also positions him to understand the Thai ways of conducting business.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <div class="text-center">
-                    <h2 class="page-section-heading text-secondary d-inline-block mb-0">Contact</h2>
-                </div>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Content-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="icon-contact mb-3"><i class="fas fa-user-ninja fa-lg" href="https://www.linkedin.com/in/mestizo"></i></div>
-                            <div class="text-muted"></div><a class="lead font-weight-bold" href="https://www.linkedin.com/in/mestizo">Hire Me!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-4">LOCATION</h4>
-                        <p class="pre-wrap lead mb-0">Chiang Mai
-Thailand</p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-4">AROUND THE WEB</h4>
-<a class="btn btn-outline-light btn-social mx-1" href="https://www.github.com/mestizo"><i class="fab fa-fw fa-github"></i></a>
-<a class="btn btn-outline-light btn-social mx-1" href="https://www.twitter.com/WetFdStamp"><i class="fab fa-fw fa-twitter"></i></a>
-<a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/mestizo"><i class="fab fa-fw fa-linkedin-in"></i></a>
-<a class="btn btn-outline-light btn-social mx-1" href="https://infosec.exchange/@mestizo"><i class="fab fa-fw fa-mastodon"></i></a>
-<br>
-<a class="btn btn-outline-light btn-social mx-1" href="https://medium.com/@mestizo"><i class="fab fa-fw fa-medium"></i></a>
-<a class="btn btn-outline-light btn-social mx-1" href="https://blog.securehub.asia"><i class="fab fa-fw fa-blogger"></i></a>
-<a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/mestizo/"><i class="fab fa-fw fa-instagram"></i></a>
-<a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/c/PatrickHarrison0"><i class="fab fa-fw fa-youtube"></i></a>
-<br>
-<a class="btn btn-outline-light btn-social mx-1" href="https://www.crunchbase.com/person/patrick-harrison"><i class="fas fa-fw fa-id-badge"></i></a>
-<a class="btn btn-outline-light btn-social mx-1" href="https://open.spotify.com/user/1229394780"><i class="fab fa-fw fa-spotify"></i></a>
-<a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/mestizo/"><i class="fab fa-fw fa-facebook"></i></a>
-<a class="btn btn-outline-light btn-social mx-1" href="https://post.news/mestizo"><i class="fas fa-fw fa-newspaper"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="mb-4">Download My CV</h4>
-<a class="btn btn-xl btn-outline-light" href="assets/files/PatrickHarrisonCVBrief-2024.pdf"><i class="fas fa-file-pdf fa-3x"></i></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <section class="copyright py-4 text-center text-white">
-            <div class="container"><small class="pre-wrap">Copyright © mestizo.asia 2025 </small></div>
-        </section>
-        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-        <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-brand">
+      <span class="footer-mark"><i class="fas fa-shield-alt"></i></span>
+      <span>mestizo</span>
+    </div>
+    <p>Security Engineering & Advisory based in Chiang Mai, Thailand</p>
+    <p>© 2026 Mestizo Asia. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div id="modal" class="modal-overlay" onclick="closeModal(event)">
+  <div class="modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="modal-content" id="modal-content">
+      <!-- Content populated by JS -->
+    </div>
+  </div>
+</div>
+
+<script>
+const modalData = {
+  github: {
+    title: 'GitHub',
+    image: 'assets/img/portfolio/GitHub-logo.png',
+    text: 'Various collection of scripts and code snippets for security automation, penetration testing tools, and DevOps utilities.',
+    link: 'https://www.github.com/mestizo',
+    linkText: 'View on GitHub'
+  },
+  blog: {
+    title: 'Security Blog',
+    image: 'assets/img/portfolio/blog2.png',
+    text: 'Long running cybersecurity focused blog covering topics from incident response to secure development practices and threat intelligence.',
+    link: 'https://blog.securehub.asia',
+    linkText: 'Read the Blog'
+  },
+  startup: {
+    title: 'CyberSecurity Startup',
+    image: 'assets/img/portfolio/top-secret.png',
+    text: 'A CyberSecurity startup based in Thailand. Currently in stealth mode - more details coming soon!',
+    link: '#',
+    linkText: 'Coming Soon'
+  }
+};
+
+function openModal(key) {
+  const data = modalData[key];
+  const content = document.getElementById('modal-content');
+  content.innerHTML = `
+    <img src="${data.image}" alt="${data.title}" class="modal-image">
+    <h2 class="modal-title">${data.title}</h2>
+    <p class="modal-text">${data.text}</p>
+    <a href="${data.link}" class="modal-btn" target="_blank" rel="noopener" ${data.link === '#' ? 'onclick="event.preventDefault(); alert(\'Coming soon!\')"' : ''}>
+      <i class="fas fa-external-link-alt"></i> ${data.linkText}
+    </a>
+  `;
+  document.getElementById('modal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(e) {
+  if (e && e.target !== e.currentTarget) return;
+  document.getElementById('modal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal();
+});
+</script>
+
+</body>
 </html>
